@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: burlywood;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project1o.SelectController">
+   <children>
+      <Label layoutX="199.0" layoutY="21.0" text="BOOK INFIRMATION" textFill="#522915" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="131.0" prefHeight="27.0" prefWidth="140.0" text="Book Name      :" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="179.0" prefHeight="27.0" prefWidth="140.0" text="Author Name   :" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="openPdfBtn" blendMode="HARD_LIGHT" cache="true" layoutX="414.0" layoutY="337.0" mnemonicParsing="false" onAction="#bookInfoBtnAct" prefHeight="25.0" prefWidth="115.0" text="OPEN PDF" textFill="#522915">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="230.0" prefHeight="27.0" prefWidth="140.0" text="Category           :" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="216.0" fitWidth="170.0" layoutX="389.0" layoutY="82.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Picture/220-330-Half_Girlfriend.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancleBtn" blendMode="HARD_LIGHT" cancelButton="true" layoutX="31.0" layoutY="337.0" mnemonicParsing="false" onAction="#bookInfoBtnAct" prefHeight="25.0" prefWidth="115.0" text="CANCEL" textFill="#522915">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="bookNameLabel" layoutX="172.0" layoutY="132.0" prefHeight="27.0" prefWidth="198.0" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="authorNameLabel" layoutX="172.0" layoutY="179.0" prefHeight="27.0" prefWidth="198.0" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="categoryLabel" layoutX="172.0" layoutY="230.0" prefHeight="27.0" prefWidth="198.0" textFill="#522915">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
